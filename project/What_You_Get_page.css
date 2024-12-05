@@ -1,0 +1,356 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+link{
+    color:green;
+    height: 40px;
+    width: 100px;
+    margin-top: -40px;
+    
+}
+
+
+/* General container for centering and preventing overflow */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Adjusting background shape to avoid overflow */
+.header-background {
+    position: absolute; /* Stick it to the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1; /* Behind the content */
+    overflow: hidden; /* Prevent scrolling due to the shape */
+    height: 150px; /* Height of the background shape */
+    width: 100%; /* Full width */
+    background: linear-gradient(135deg, rgba(0, 150, 0, 0.1), rgba(0, 200, 0, 0.3)); /* Gradient background */
+    clip-path: ellipse(70% 100% at 50% 0%); /* Creating the curved shape */
+    overflow: hidden; /* Prevent scrolling due to the shape */
+   
+}
+
+/* Header styling */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    position: relative; /* To stack properly over the background */
+    z-index: 1; /* Ensure header content is above the background */
+}
+
+/* Styling for header title */
+.header-container h1 {
+    font-size: 28px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+/* Styling for navigation links */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 30px;
+}
+
+nav a {
+    font-size: 18px;
+    text-decoration: none;
+    color: green;
+    white-space: nowrap;
+}
+
+/* Styling for login and signup buttons */
+.auth-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.auth-buttons button {
+    border-radius: 50px;
+    height: 40px;
+    width: 100px;
+    border: solid;
+    cursor: pointer;
+    white-space: nowrap;
+    padding: 0 15px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        justify-content: center;
+        margin-top: 10px;
+        gap: 20px;
+    }
+
+    .auth-buttons {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .auth-buttons button {
+        width: auto;
+        padding: 0 20px;
+    }
+}
+#signup{
+    background-color: white;
+    color:#3fba3f;
+    border-radius: 50px;
+    height: 40px;
+    width: 100px;
+    border: green;
+    margin-top: -40px;  
+   
+
+}
+#login{
+    color: white;
+    background-color:#3fba3f;
+    border-radius: 50px;
+    height: 40px;
+    width: 100px;
+    border: 1px green solid;
+    margin-top: -40px;
+    
+    
+}
+h1 {
+   
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: green;
+    
+}
+
+
+.title{
+    position: absolute;
+    top: calc(6cm - 1cm); /* Move up by 1cm */
+    width: 100%;
+    text-align: center;
+   
+}
+p{
+    font-size: 18px;
+}
+.para1{
+    height: 300px;
+    width: 210vh;
+    background-color: #dafbda;
+    display: flex;
+    margin-top: 250px;
+}
+#img3{
+    height: 200px;
+    width: 200px;
+    margin-left: 60px;
+    margin-top: 30px;
+    border-radius: 50%;
+}
+.midtext2{
+    height: 200px;
+    width: 400px;
+    margin-left: 300px;
+    margin-top: 25px;
+    padding-top: 50px;
+    
+}
+#midheading2{
+    padding-bottom: 20px;
+}
+.quot1{
+    height: 200px;
+    width: 200px;
+    
+    margin-left:600px ;
+    margin-top: -95px;
+}
+/* for para 2 */
+
+.para2{
+    height: 300px;
+    width: 210vh;
+    background-color: #88d488;
+    display: flex;
+    
+}
+#img4{
+    height: 200px;
+    width: 200px;
+    margin-left: 60px;
+    margin-top: 30px;
+    border-radius: 50%;
+}
+.midtext3{
+    height: 200px;
+    width: 500px;
+    margin-left: 300px;
+    
+    padding-top: 50px;
+    
+}
+#midheading3{
+    padding-bottom: 20px;
+}
+.quot2{
+    height: 200px;
+    width: 200px;
+    
+    margin-left:600px ;
+    margin-top: -180px;
+}
+/* for para 3 */
+.para3{
+    height: 300px;
+    width: 210vh;
+    background-color: #dafbda;
+    display: flex;
+    
+}
+#img5{
+    height: 200px;
+    width: 200px;
+    margin-left: 60px;
+    margin-top: 30px;
+    border-radius: 50%;
+}
+.midtext4{
+    height: 200px;
+    width: 500px;
+    margin-left: 300px;
+    
+    padding-top: 50px;
+    
+}
+#midheading4{
+    padding-bottom: 20px;
+}
+.quot3{
+    height: 200px;
+    width: 200px;
+    
+    margin-left:600px ;
+    margin-top: -120px;
+}
+/* for para 4 */
+
+.para4{
+    height: 300px;
+    width: 210vh;
+    background-color: #88d488;
+    display: flex;
+    
+}
+#img6{
+    height: 200px;
+    width: 200px;
+    margin-left: 60px;
+    margin-top: 30px;
+    border-radius: 50%;
+}
+.midtext5{
+    height: 200px;
+    width: 500px;
+    margin-left: 300px;
+    
+    padding-top: 50px;
+    
+}
+#midheading5{
+    padding-bottom: 20px;
+}
+.quot4{
+    height: 200px;
+    width: 200px;
+    
+    margin-left:600px ;
+    margin-top: -120px;
+}
+/* Button and footer */
+
+.buttonstart{
+    
+    height: 100px;
+    width: 300px;
+    margin-left: 650px;
+    margin-bottom: 100px;
+    text-align: center;
+    margin-top: 100px;
+    
+}
+#heading4{
+   
+    text-align: center;
+    font-size: 40px;
+    color: #3fba3f;
+    padding-bottom: 20px;
+}
+#but2
+{
+    border-radius: 50px;
+    height: 50px;
+    width: 200px;
+    padding: 10px 20px ;
+    background-color: rgb(121, 37, 206);
+    color: white;
+    border: none;
+    font-size: 15px;
+}
+.footer{
+    height: 400px;
+    width: 210vh;
+    bottom: 0;
+    display: flex;
+    background-color: #d2f3d2;
+    
+
+}
+.textfooter{
+    padding-top: 100px;
+    margin-left: 80px;
+    width: 450px;
+   
+    position: absolute;
+}
+#img7
+{
+    height: 300px;
+    width: 300px;
+    
+    /* padding-top: 80px; */
+    object-fit: cover;
+    position: relative;
+    margin-left: 800px;
+    margin-top: -200px;
+
+    
+}
+#heading5{
+    width: 500px;
+}
+#a {
+    color:white;
+    background-color: transparent;
+    text-decoration: none;
+  }
+  #link1{
+    color: white;
+    text-decoration: none;
+}

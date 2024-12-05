@@ -1,0 +1,264 @@
+
+ * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            
+                color: green;
+                margin-top: 30px;
+                margin-left: 40px;
+                
+            
+        }
+        .title {
+            position: absolute;
+            top: calc(6cm - 1cm); /* Move up by 1cm */
+            width: 100%;
+            text-align: center;
+        }
+
+        .title h1 {
+            font-size: 50px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            color:green;
+        }
+
+        .subtitle {
+            position: absolute;
+            top: calc(5cm + 50px + 1cm); /* Move up by 1cm */
+            width: 100%;
+            text-align: center;
+            color: #333; /* Darker color for the subtitle */
+            font-size: 20px;
+        }
+
+        .signup-container {
+            position: absolute;
+            display: flex;
+            justify-content: left;
+            align-items: left;
+            margin-left: 200px;
+            margin-top: 250px;
+            width: 100%;
+            height: 100%;
+        }
+
+        .signup-box {
+            background-color: #ffffff;
+            padding: 40px;
+            border: 1px solid #cccccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            height: 400px; /* Adjusted height to fit all input fields */
+            text-align: center;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .signup-box h2 {
+            margin-bottom: 20px;
+            color: #333333;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+            width: 100%;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #555555;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .info-box {
+            width: 400px; /* Increase the width */
+            height: 400px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .info-box h2 {
+            margin-bottom: 20px;
+            color: #333333;
+        }
+
+        .info-box p {
+            color: #555555;
+            margin-bottom: 10px;
+        }
+
+        .info-box img {
+            max-width: 90%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px; /* Space between image and text */
+        }
+.link{
+    color:green;
+    height: 40px;
+    width: 100px;
+    margin-top: -40px;
+    
+}
+
+
+/* General container for centering and preventing overflow */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Adjusting background shape to avoid overflow */
+.header-background {
+    position: absolute; /* Stick it to the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1; /* Behind the content */
+    overflow: hidden; /* Prevent scrolling due to the shape */
+    height: 150px; /* Height of the background shape */
+    width: 100%; /* Full width */
+    background: linear-gradient(135deg, rgba(0, 150, 0, 0.1), rgba(0, 200, 0, 0.3)); /* Gradient background */
+    clip-path: ellipse(70% 100% at 50% 0%); /* Creating the curved shape */
+    overflow: hidden; /* Prevent scrolling due to the shape */
+   
+}
+
+/* Header styling */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    position: relative; /* To stack properly over the background */
+    z-index: 1; /* Ensure header content is above the background */
+}
+
+/* Styling for header title */
+.header-container h1 {
+    font-size: 28px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+/* Styling for navigation links */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 30px;
+}
+
+nav a {
+    font-size: 16px;
+    text-decoration: none;
+    color: green;
+    white-space: nowrap;
+}
+
+/* Styling for login and signup buttons */
+.auth-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.auth-buttons button {
+    border-radius: 50px;
+    height: 40px;
+    width: 100px;
+    border: solid;
+    cursor: pointer;
+    white-space: nowrap;
+    padding: 0 15px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        justify-content: center;
+        margin-top: 10px;
+        gap: 20px;
+    }
+
+    .auth-buttons {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .auth-buttons button {
+        width: auto;
+        padding: 0 20px;
+    }
+}
+#signup{
+    background-color: white;
+    color:#3fba3f;
+    border-radius: 50px;
+    height: 40px;
+    width: 100px;
+    border: green;
+    margin-top: -40px;  
+   
+
+}
+#login{
+    color: white;
+    background-color:#3fba3f;
+    border-radius: 50px;
+    height: 40px;
+    width: 100px;
+    border: 1px green solid;
+    margin-top: -40px;
+    
+    
+}
+h1 {
+   
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: green;
+    
+}
+

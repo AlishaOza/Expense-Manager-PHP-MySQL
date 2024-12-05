@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Management</title>
+    <link rel="stylesheet" href="Dashboard_page.css" />
+</head>
+<body>
+
+<div class="container">
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div>
+            <h2>Envelopes</h2>
+            <div class="envelope-category">
+                <h3>Monthly</h3>
+                <div id="monthly-categories"></div>
+            </div>
+        </div>
+        <!-- Income Summary at the bottom -->
+        <div class="income-summary">
+            <h3>Total Income: ₹<span id="total-income">0.00</span></h3>
+            <h3>Total Expenses: ₹<span id="total-expenses">0.00</h3>
+            <h3>Savings: ₹<span id="savings">0.00</span></h3>
+        </div>
+    </div>
+
+    <!-- Main content -->
+    <div class="main-content">
+        <h1>Expense Management</h1>
+
+        <!-- Income Entry -->
+        <div class="input-group">
+            <label for="income">Enter Your Monthly Income:</label>
+            <input type="number" id="income" placeholder="Enter income">
+            <button class="btn" onclick="saveIncome()">Save Income</button>
+        </div>
+
+        <!-- Expense Entry -->
+        <div class="input-group">
+            <label for="date">Date:</label>
+            <input type="date" id="date">
+            <label for="amount">Amount:</label>
+            <input type="number" id="amount" placeholder="Enter amount">
+            <label for="category">Category:</label>
+            <select id="category">
+<option value="Electricity Bill">Electricity Bill</option>
+<option value="Gas Bill">Gas Bill</option>
+<option value="Water Bill">Water Bill</option>
+<option value="Sewer Bill">Sewer Bill</option>
+<option value="Trash Collection">Trash Collection</option>
+<option value="Internet Service">Internet Service</option>
+<option value="Cable/Satellite TV">Cable/Satellite TV</option>
+<option value="Home Security">Home Security</option>
+<option value="Heating Oil">Heating Oil</option>
+<option value="Groceries">Groceries</option>
+<option value="Dining Out">Dining Out</option>
+<option value="Transportation">Transportation</option>
+<option value="Insurance">Insurance</option>
+<option value="Loan Payments">Loan Payments</option>
+<option value="Subscription Services">Subscription Services</option>
+<option value="Hobbies">Hobbies</option>
+<option value="Travel">Travel</option>
+<option value="Gifts">Gifts</option>
+<option value="Medical Expenses">Medical Expenses</option>
+<option value="Clothing">Clothing</option>
+<option value="Home Maintenance">Home Maintenance</option>
+<option value="Car Maintenance">Car Maintenance</option>
+<option value="Self-Care">Self-Care</option>
+
+            </select>
+            <button class="btn" onclick="addExpense()">Add Expense</button>
+        </div>
+
+        <!-- Transactions Section -->
+        <div class="transaction-section">
+            <h2>Transactions</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Type</th>
+                        <th>Amount</th>
+                        <th>Category</th>
+                    </tr>
+                </thead>
+                <tbody id="transaction-summary"></tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script>
+   
+</script>
+<script src="../JS files/Dashboard_script.js"></script>
+</body>
+</html>
+

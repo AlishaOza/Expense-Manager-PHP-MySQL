@@ -1,0 +1,294 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+.link{
+    color:green;
+    height: 40px;
+    width: 100px;
+    margin-top: -40px;
+    
+}
+
+
+/* General container for centering and preventing overflow */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Adjusting background shape to avoid overflow */
+.header-background {
+    position: absolute; /* Stick it to the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1; /* Behind the content */
+    overflow: hidden; /* Prevent scrolling due to the shape */
+    height: 150px; /* Height of the background shape */
+    width: 100%; /* Full width */
+    background: linear-gradient(135deg, rgba(0, 150, 0, 0.1), rgba(0, 200, 0, 0.3)); /* Gradient background */
+    clip-path: ellipse(70% 100% at 50% 0%); /* Creating the curved shape */
+    overflow: hidden; /* Prevent scrolling due to the shape */
+   
+}
+
+/* Header styling */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    position: relative; /* To stack properly over the background */
+    z-index: 1; /* Ensure header content is above the background */
+}
+
+/* Styling for header title */
+.header-container h1 {
+    font-size: 28px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+/* Styling for navigation links */
+nav {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 30px;
+}
+
+nav a {
+    font-size: 18px;
+    text-decoration: none;
+    color: green;
+    white-space: nowrap;
+}
+
+/* Styling for login and signup buttons */
+.auth-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.auth-buttons button {
+    border-radius: 50px;
+    height: 40px;
+    width: 100px;
+    border: solid;
+    cursor: pointer;
+    white-space: nowrap;
+    padding: 0 15px;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        justify-content: center;
+        margin-top: 10px;
+        gap: 20px;
+    }
+
+    .auth-buttons {
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .auth-buttons button {
+        width: auto;
+        padding: 0 20px;
+    }
+}
+
+h1 {
+   
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: green;
+    
+}
+.header {
+            
+    color: green;
+    margin-top: 30px;
+    margin-left: 40px;
+    
+
+}
+.title{
+    position: absolute;
+    top: calc(6cm - 1cm); /* Move up by 1cm */
+    width: 100%;
+    text-align: center; 
+}
+.title h1 {
+    font-size: 35px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:green; 
+}
+.subtitle {
+    position: absolute;
+    top: calc(5cm + 50px + 1cm); /* Move up by 1cm */
+    width: 100%;
+    text-align: center;
+    color: #333; /* Darker color for the subtitle */
+    font-size: 30px;
+}
+
+
+#signup{
+    background-color: white;
+    color:#3fba3f;
+    border-radius: 50px;
+    height: 40px;
+    width: 100px;
+    border: none;
+    margin-top: -40px;  
+   
+
+}
+#login{
+    color: white;
+    background-color:#3fba3f;
+    border-radius: 50px;
+    height: 40px;
+    width: 100px;
+    border: 1px green solid;
+    margin-top: -40px;   
+}
+.text
+{
+    
+    width: 500px;
+    
+    /* position: relative; */
+    
+}
+.paragraph{
+   
+    display:flex;
+   text-align: center;
+   justify-content: center;
+   margin-top: 250px;
+}
+.button{
+    /* height: 100px;
+    width: 100px; */
+    /* margin-left: 100px; */
+    padding-top: 50px;
+    
+}
+p{
+    font-size: 20px;
+}
+#but{
+    
+    border-radius: 50px;
+    height: 50px;
+    width: 350px;
+    padding: 15px 30px ;
+    background-color: rgb(121, 37, 206);
+    border: none;
+    font-size: 15px;
+    text-decoration: none;
+    
+    /* margin-left: 300px; */
+}
+#link1{
+    color: white;
+    text-decoration: none;
+}
+.steps{
+
+    
+    margin-bottom: 100px;
+    /* background-color: rgb(60, 226, 238); */
+    margin-top: 50px;
+    display: flex;
+    padding-left: 240px;
+}
+.box1{
+
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: rgb(112, 193, 255);
+    margin-top: 25px;
+    margin-left: 50px;
+    text-align: center;
+}
+.box2{
+
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color:rgb(112, 193, 255);
+    margin-top: 25px;
+    margin-left: 35px;
+    text-align: center;
+}
+.box3{
+
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: rgb(112, 193, 255);
+    margin-top: 25px;
+    margin-left: 35px;
+    text-align: center;
+}
+.box4{
+
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color:rgb(112, 193, 255);
+    margin-top: 25px;
+    margin-left: 35px;
+    text-align: center;
+}
+#box{
+    font-size: 30px;
+    text-align: center;
+    padding-top: 60px;
+}
+/* footer */
+.footer{
+    height: 400px;
+    width: 200vh;
+    display: flex;
+    background-color: #d2f3d2;
+    
+
+}
+.textfooter{
+    padding-top: 100px;
+    margin-left: 80px;
+    width: 450px;
+   
+    position: absolute;
+}
+#img7
+{
+    height: 300px;
+    width: 300px;
+    
+    /* padding-top: 80px; */
+    object-fit: cover;
+    position: relative;
+    margin-left: 800px;
+    margin-top: -200px;
+    
+}
+#heading5{
+    width: 500px;
+}
